@@ -279,8 +279,8 @@ begin
     MESSAGE_BLOCK_INTERMEDIATE :
     for i in 0 to 15 generate
     begin
-        --M_INT(i) <= msg_block_in((WORD_SIZE * (i+1))-1 downto WORD_SIZE * i);
-        M_INT(i) <= msg_block_in((WORD_SIZE * i) to WORD_SIZE * (i+1)-1);
+        M_INT(i) <= msg_block_in((WORD_SIZE * (i+1))-1 downto WORD_SIZE * i);
+        --M_INT(i) <= msg_block_in((WORD_SIZE * i) to WORD_SIZE * (i+1)-1);
     end generate;
     
     MESSAGE_SCHEDULE_INTERMEDIATE_00:
